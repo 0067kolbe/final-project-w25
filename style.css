@@ -4,17 +4,34 @@
 
 h1{
     font-size: 2.027rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 h2{
     font-size: 1.802rem;
     text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 h3{
     font-size: 1.266rem;
-    text-align: center;
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
+
+p{
+    font-size: 1.150rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
 
 /* mobile settings */
 
@@ -25,6 +42,10 @@ header{
     text-align: center;
 }
 
+header img{
+    border-radius: 25px;
+}
+
 header div{
     display: flex;
     justify-content: space-between;
@@ -32,6 +53,10 @@ header div{
 
 header ul{
     list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
 }
 
 header ul li{
@@ -45,7 +70,7 @@ header nav{
 }
 header nav img:nth-child(1){
     display:flex;
-    width: calc(100% - 4px);
+    width: calc(100%);
     order: 1;
     flex-direction: row;
     padding: 6px;
@@ -53,7 +78,7 @@ header nav img:nth-child(1){
 
 header nav img:nth-child(2){
     display:flex;
-    width: calc(33% - 4px);
+    width: calc(33%);
     order: 2;
     flex-direction: row;
     padding: 6px;
@@ -61,7 +86,7 @@ header nav img:nth-child(2){
 
 header nav img:nth-child(3){
     display:flex;
-    width: calc(33% - 4px);
+    width: calc(33%);
     order: 3;
     flex-direction: row;
     padding: 6px;
@@ -69,7 +94,7 @@ header nav img:nth-child(3){
 
 header nav img:nth-child(4){
     display:flex;
-    width: calc(33% - 4px);
+    width: calc(33%);
     order: 4;
     flex-direction: row;
     padding: 6px;
@@ -78,11 +103,24 @@ header nav img:nth-child(4){
 #Sweetheart button{
     color: white;
     background-color: black;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 7%;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #Saying{
     background-color: black;
     color: white;
+    padding: 1rem;
+}
+
+#Saying article{
+    display: grid;
 }
 
 #Prices nav{
@@ -94,6 +132,7 @@ header nav img:nth-child(4){
 
 #Prices img{
     width: 100%;
+    border-radius: 25px;
 }
 #Prices p{
     text-align: center;
@@ -102,7 +141,6 @@ header nav img:nth-child(4){
 #Prices article{
     display: flex;
   flex-direction: column;
-  align-items: flex-start;
   text-align: center;
   padding: 1em;
 }
@@ -117,9 +155,12 @@ header nav img:nth-child(4){
 
 @media(min-width: 768px){ 
 
-
     header{
         text-align: center;
+    }
+    
+    header img{
+        border-radius: 25px;
     }
     
     header div{
@@ -129,6 +170,10 @@ header nav img:nth-child(4){
     
     header ul{
         list-style: none;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        text-transform: uppercase;
     }
     
     header ul li{
@@ -140,55 +185,102 @@ header nav img:nth-child(4){
         display:flex;
         flex-wrap: wrap;
     }
-
-    
     header nav img:nth-child(1){
         display:flex;
-        width: calc(50% - 4px);
+        width: calc(100%);
         order: 1;
         flex-direction: row;
         padding: 6px;
-        align-self: flex-start;
     }
     
     header nav img:nth-child(2){
         display:flex;
-        width: calc(50% - 4px);
+        width: calc(33%);
         order: 2;
         flex-direction: row;
         padding: 6px;
-        align-self: flex-start;
     }
     
     header nav img:nth-child(3){
         display:flex;
-        width: calc(50% - 4px);
+        width: calc(33%);
         order: 3;
         flex-direction: row;
         padding: 6px;
-        align-self: flex-end;
     }
     
     header nav img:nth-child(4){
         display:flex;
-        width: calc(50% - 4px);
+        width: calc(33%);
         order: 4;
         flex-direction: row;
         padding: 6px;
-        align-self: flex-end;
     }
     
     #Sweetheart button{
         color: white;
         background-color: black;
+        font-size: 1rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        border-radius: 7%;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #Behind{
+        background-color: pink;
+    }
+
+    #Behind nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
     
+    #Behind article{
+        padding: 1em;
+    }
+
     #Saying{
         background-color: black;
         color: white;
+        padding: 2rem;
     }
     
+    #Saying nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
+
+    #Saying article{
+        padding: 1em;
+    }
+    
+    #Prices nav{
+        display: grid;
+      grid-template-columns: 1fr 1fr ;
+      grid-template-rows: 1fr 1fr;
+      
+    }
+    
+    #Prices img{
+        width: 100%;
+        border-radius: 25px;
+    }
+    #Prices p{
+        text-align: center;
+    }
+    
+    #Prices article{
+        display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 1em;
+    }
+}    
 
     /* 960px settings */
 
@@ -265,4 +357,27 @@ header nav img:nth-child(4){
             color: white;
         }
         
+        #Prices nav{
+            display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr;
+          
+        }
+        
+        #Prices img{
+            width: 100%;
+            border-radius: 25px;
+        }
+        #Prices p{
+            text-align: center;
+        }
+        
+        #Prices article{
+            display: flex;
+          flex-direction: column;
+          text-align: center;
+          padding: 1em;
+        }
+
+
         }
