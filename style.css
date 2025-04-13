@@ -64,11 +64,11 @@ header ul li{
     padding: 7px;
 }
 
-header nav{
+#Sweetheart nav{
     display:flex;
     flex-wrap: wrap;
 }
-header nav img:nth-child(1){
+#Sweetheart nav img:nth-child(1){
     display:flex;
     width: calc(100%);
     order: 1;
@@ -76,7 +76,7 @@ header nav img:nth-child(1){
     padding: 6px;
 }
 
-header nav img:nth-child(2){
+#Sweetheart nav img:nth-child(2){
     display:flex;
     width: calc(33%);
     order: 2;
@@ -84,7 +84,7 @@ header nav img:nth-child(2){
     padding: 6px;
 }
 
-header nav img:nth-child(3){
+#Sweetheart nav img:nth-child(3){
     display:flex;
     width: calc(33%);
     order: 3;
@@ -92,7 +92,7 @@ header nav img:nth-child(3){
     padding: 6px;
 }
 
-header nav img:nth-child(4){
+#Sweetheart nav img:nth-child(4){
     display:flex;
     width: calc(33%);
     order: 4;
@@ -181,40 +181,44 @@ header nav img:nth-child(4){
         padding: 7px;
     }
     
-    header nav{
+    #Sweetheart nav{
         display:flex;
         flex-wrap: wrap;
     }
-    header nav img:nth-child(1){
+    #Sweetheart nav img:nth-child(1){
         display:flex;
-        width: calc(100%);
+        width: calc(50%);
         order: 1;
         flex-direction: row;
         padding: 6px;
+        border-radius: 15px;
     }
     
-    header nav img:nth-child(2){
+    #Sweetheart nav img:nth-child(2){
         display:flex;
-        width: calc(33%);
+        width: calc(50%);
         order: 2;
         flex-direction: row;
         padding: 6px;
+        border-radius: 15px;
     }
     
-    header nav img:nth-child(3){
+    #Sweetheart nav img:nth-child(3){
         display:flex;
-        width: calc(33%);
+        width: calc(50%);
         order: 3;
         flex-direction: row;
         padding: 6px;
+        border-radius: 15px;
     }
     
-    header nav img:nth-child(4){
+    #Sweetheart nav img:nth-child(4){
         display:flex;
-        width: calc(33%);
+        width: calc(50%);
         order: 4;
         flex-direction: row;
         padding: 6px;
+        border-radius: 15px;
     }
     
     #Sweetheart button{
@@ -304,47 +308,55 @@ header nav img:nth-child(4){
             display: inline-block;
             padding: 7px;
         }
+
+        #Sweetheart{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        #Sweetheart article{
+            padding: 1rem;
+        }
         
-        header nav{
+        #Sweetheart nav{
             display:flex;
             flex-wrap: wrap;
         }
-    
-        
-        header nav img:nth-child(1){
+        #Sweetheart nav img:nth-child(1){
             display:flex;
-            width: calc(50% - 4px);
+            width: calc(50%);
             order: 1;
             flex-direction: row;
             padding: 6px;
-            align-self: flex-start;
+            border-radius: 15px;
         }
         
-        header nav img:nth-child(2){
+        #Sweetheart nav img:nth-child(2){
             display:flex;
-            width: calc(50% - 4px);
+            width: calc(50%);
             order: 2;
             flex-direction: row;
             padding: 6px;
-            align-self: flex-start;
+            border-radius: 15px;
         }
         
-        header nav img:nth-child(3){
+        #Sweetheart nav img:nth-child(3){
             display:flex;
-            width: calc(50% - 4px);
+            width: calc(50%);
             order: 3;
             flex-direction: row;
             padding: 6px;
-            align-self: flex-end;
+            border-radius: 15px;
         }
         
-        header nav img:nth-child(4){
+        #Sweetheart nav img:nth-child(4){
             display:flex;
-            width: calc(50% - 4px);
+            width: calc(50%);
             order: 4;
             flex-direction: row;
             padding: 6px;
-            align-self: flex-end;
+            border-radius: 15px;
         }
         
         #Sweetheart button{
