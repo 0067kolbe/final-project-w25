@@ -234,10 +234,6 @@ header ul li{
         padding-right: 20px;
     }
 
-    #Behind{
-        background-color: pink;
-    }
-
     #Behind nav{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -391,5 +387,113 @@ header ul li{
           padding: 1em;
         }
 
+    }
+
+        @media(min-width: 960px){
+
+
+            body{
+                padding-left: 6rem;
+                padding-right: 6rem;
+            }
+            header{
+                text-align: center;
+            }
+            
+            header div{
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            header ul{
+                list-style: none;
+            }
+            
+            header ul li{
+                display: inline-block;
+                padding: 7px;
+            }
+    
+            #Sweetheart{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+            }
+    
+            #Sweetheart article{
+                padding: 1rem;
+            }
+            
+            #Sweetheart nav{
+                display:flex;
+                flex-wrap: wrap;
+            }
+            #Sweetheart nav img:nth-child(1){
+                display:flex;
+                width: calc(50%);
+                order: 1;
+                flex-direction: row;
+                padding: 6px;
+                border-radius: 15px;
+            }
+            
+            #Sweetheart nav img:nth-child(2){
+                display:flex;
+                width: calc(50%);
+                order: 2;
+                flex-direction: row;
+                padding: 6px;
+                border-radius: 15px;
+            }
+            
+            #Sweetheart nav img:nth-child(3){
+                display:flex;
+                width: calc(50%);
+                order: 3;
+                flex-direction: row;
+                padding: 6px;
+                border-radius: 15px;
+            }
+            
+            #Sweetheart nav img:nth-child(4){
+                display:flex;
+                width: calc(50%);
+                order: 4;
+                flex-direction: row;
+                padding: 6px;
+                border-radius: 15px;
+            }
+            
+            #Sweetheart button{
+                color: white;
+                background-color: black;
+            }
+            
+            #Saying{
+                background-color: black;
+                color: white;
+            }
+            
+            #Prices nav{
+                display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+              grid-template-rows: 1fr;
+              
+            }
+            
+            #Prices img{
+                width: 100%;
+                border-radius: 25px;
+            }
+            #Prices p{
+                text-align: center;
+            }
+            
+            #Prices article{
+                display: flex;
+              flex-direction: column;
+              text-align: center;
+              padding: 1em;
+            }
 
         }
